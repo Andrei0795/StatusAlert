@@ -64,6 +64,10 @@ import UIKit
     
     // MARK: - Interaction methods
     
+    public func setTimerInterval(timerInterval: TimeInterval) {
+        self.defaultDisappearTimerTimeInterval = timerInterval
+    }
+    
     @objc private func pick() {
         guard canBePickedOrDismissed
             else {
