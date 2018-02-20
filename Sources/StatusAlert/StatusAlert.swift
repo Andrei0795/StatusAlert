@@ -359,15 +359,7 @@ import UIKit
     }
     
     @objc private func setupContentViewBackground() {
-        if isBlurAvailable {
-            if #available(iOS 11, *) {
-                contentView.effect = blurEffect
-            } else if StatusAlert.isPresenting {
-                contentView.effect = blurEffect
-            }
-        } else {
-            contentView.backgroundColor = appearance.backgroundColor
-        }
+        contentView.backgroundColor = .white
     }
     
     private func setupContentView() {
