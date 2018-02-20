@@ -21,7 +21,7 @@ import UIKit
     /// Used to present only one `StatusAlert` at once
     private static var isPresenting: Bool = false
     
-    private let defaultDisappearTimerTimeInterval: TimeInterval = 2
+    private var defaultDisappearTimerTimeInterval: TimeInterval = 2
     private let defaultFadeAnimationDuration: TimeInterval = TimeInterval(UINavigationControllerHideShowBarDuration)
     private let blurEffect: UIBlurEffect = UIBlurEffect(style: .light)
     
